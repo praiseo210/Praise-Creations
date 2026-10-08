@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="u6PH46YIFKd4Oh53c0XSBm1lv46pMtConoYmlHgwqe4" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AJEPE PRAISE OLUWAFEMI| Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="logo.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        :root {
+            --gold: #d4af68;
+            --dark: #0b0b0b;
+            --card: #171717;
+            --border: #292929;
+            --text: #bdbdbd;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90px;
+            background: rgba(8, 8, 8, 0.96);
+            border-bottom: 1px solid #191919;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            height: 100%;
+            margin: auto;
+            padding: 0 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border: 2px solid white;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .brand {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .menu {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 150px 40px 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .small-title {
+            color: var(--gold);
+            letter-spacing: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: var(--text);
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            border: 1px solid var(--gold);
+            text-decoration: none;
+            color: var(--gold);
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            color: #000;
+        }
+
+        .btn.primary {
+            background: var(--gold);
+            color: #000;
+        }
+
+        .btn.primary:hover {
+            background: transparent;
+            color: var(--gold);
+        }
+
+        /* ================= PROFILE IMAGE ================= */
+
+        .hero-image {
+            flex: 0 0 430px;
+            position: relative;
+        }
+
+        .image-frame {
+            position: relative;
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+        }
+
+        .image-frame::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-top: 2px solid var(--gold);
+            border-right: 2px solid var(--gold);
+            top: -15px;
+            right: -15px;
+        }
+
+        .image-frame::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-left: 2px solid var(--gold);
+            border-bottom: 2px solid var(--gold);
+            bottom: -15px;
+            left: -15px;
+        }
+
+        .image-frame img {
+            width: 100%;
+            display: block;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 100px 30px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-label {
+            color: var(--gold);
+            letter-spacing: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 5vw, 50px);
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 45px;
+            margin-bottom: 50px;
+        }
+
+        .about-card h3 {
+            color: var(--gold);
+            font-size: 20px;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+
+        .about-card p {
+            color: var(--text);
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .about-subtitle {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 35px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            margin-bottom: 18px;
+        }
+
+        .service-card p {
+            color: var(--text);
+        }
+
+        .service-number {
+            color: var(--gold);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: var(--card);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .project-image {
+            height: 230px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 40px;
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-info p {
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 45px;
+        }
+
+        .contact-box p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin: 20px 0;
+        }
+
+        .contact-item strong {
+            color: var(--gold);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: #777;
+        }
+
+        footer span {
+            color: var(--gold);
+        }
+
+        /* ================= WHATSAPP ================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+
+            width: 60px;
+            height: 60px;
+
+            background: #25D366;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+
+                background: #0b0b0b;
+
+                flex-direction: column;
+                align-items: center;
+
+                padding: 25px;
+
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                padding-top: 130px;
+                text-align: left;
+            }
+
+            .hero-image {
+                width: 100%;
+                max-width: 430px;
+                flex: auto;
+            }
+
+            .hero-text {
+                width: 100%;
+            }
+
+            .services,
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .about-card,
+            .contact-box {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            header {
+                height: 75px;
+            }
+
+            .nav {
+                padding: 0 20px;
+            }
+
+            .logo {
+                width: 42px;
+                height: 42px;
+            }
+
+            .brand {
+                font-size: 15px;
+            }
+
+            .hero {
+                padding: 110px 20px 60px;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .image-frame img {
+                height: 430px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+                width: 100%;
+            }
+
+            .about-card {
+                padding: 25px;
+            }
+
+            .service-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="nav">
+
+        <div class="logo-area">
+
+            <div class="logo">
+                AP
+            </div>
+
+            <div class="brand">
+                AJEPE <span>PRAISE</span>
+            </div>
+
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+        <div class="menu" onclick="toggleMenu()">
+            ☰
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <div class="small-title">
+            ENTREPRENEUR · ICT · CREATIVE DESIGN
+        </div>
+
+        <h1>
+             AJEPE <span>PRAISE</span> OLUWAFEMI
+        </h1>
+
+        <p class="hero-description">
+            Entrepreneur, ICT & Web Design Enthusiast and Creative Designer
+            focused on building practical digital experiences, creative
+            projects and modern solutions through technology.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn primary">
+                View My Work
+            </a>
+
+            <a href="cv download.pdf" class="btn" download>
+                Download CV
+            </a>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="image-frame">
+            <!-- CHANGE profile.jpg TO YOUR IMAGE NAME -->
+            <img src="profile pic.jpg" alt="Ajepe Praise">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            ABOUT ME
+        </div>
+
+        <h2 class="section-title">
+            Building ideas into
+            <span>digital experiences.</span>
+        </h2>
+
+
+        <div class="about-card">
+
+            <h3>
+                PROFESSIONAL PROFILE
+            </h3>
+
+            <p>
+                Ajepe Praise Oluwafemi is an entrepreneur with a strong
+                interest in ICT, web design and digital creativity.
+            </p>
+
+            <p>
+                His work combines entrepreneurial thinking, creative design
+                and technology to develop practical digital projects.
+            </p>
+
+        </div>
+
+
+        <h2 class="about-subtitle">
+            Creativity backed by technology.
+        </h2>
+
+        <p style="color:#bdbdbd; font-size:17px;">
+            I am interested in using technology not just as a tool,
+            but as a way to solve problems, communicate ideas and create
+            useful digital experiences.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-label">
+            WHAT I DO
+        </div>
+
+        <h2 class="section-title">
+            My <span>Services</span>
+        </h2>
+
+
+        <div class="services">
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    01
+                </div>
+
+                <h3>
+                    Web Design
+                </h3>
+
+                <p>
+                    Creating responsive and visually appealing websites
+                    using modern HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    02
+                </div>
+
+                <h3>
+                    Graphic Design
+                </h3>
+
+                <p>
+                    Developing professional visual materials, branding
+                    concepts, flyers and digital graphics.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    03
+                </div>
+
+                <h3>
+                    ICT
+                </h3>
+
+                <p>
+                    Exploring information and communication technologies
+                    and applying them to practical digital projects.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    04
+                </div>
+
+                <h3>
+                    Creative Problem Solving
+                </h3>
+
+                <p>
+                    Turning ideas and challenges into practical, creative
+                    and usable solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-label">
+            MY WORK
+        </div>
+
+        <h2 class="section-title">
+            Featured <span>Projects</span>
+        </h2>
+
+
+        <div class="projects">
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    💻
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Personal Website
+                    </h3>
+
+                    <p>
+                        A modern responsive personal portfolio website
+                        created with HTML, CSS and JavaScript.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    🎨
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Creative Design
+                    </h3>
+
+                    <p>
+                        Digital graphics, branding concepts and creative
+                        visual designs.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    🛒
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Online Store
+                    </h3>
+
+                    <p>
+                        A responsive online shop interface for displaying
+                        products and connecting customers.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    📱
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Digital Project
+                    </h3>
+
+                    <p>
+                        A practical digital solution designed to make
+                        information and services easier to access.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            CONTACT ME
+        </div>
+
+        <h2 class="section-title">
+            Let's work on something
+            <span>great.</span>
+        </h2>
+
+
+        <div class="contact-box">
+
+            <p>
+                Have a project, idea or opportunity?
+                You can contact me using any of the details below.
+            </p>
+
+
+            <div class="contact-item">
+
+                <strong>Email:</strong>
+
+                <p>
+                    oluwafemip210@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>Phone:</strong>
+
+                <p>
+                    +2348133671059
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>Location:</strong>
+
+                <p>
+                    Nigeria
+                </p>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <!-- CHANGE THE NUMBER -->
+
+                <a
+                    href="https://wa.me/2348133671059"
+                    class="btn primary"
+                    target="_blank"
+                >
+                    WhatsApp Me
+                </a>
+
+                <a
+                    href="mailto:oluwafemip210@gmail.com
+                    class="btn"
+                >
+                    Send Email
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OUR WORKS SECTION -->
+<section class="our-works">
+    <h2>Our Works</h2>
+    <p>Check out some of our latest works</p>
+
+    <div class="works-buttons">
+
+        <!-- WORK 1 -->
+        <a href="https://praiseo210.github.io/AJEPS-SOUND-GLOBAL-LIMITED/" target="_blank" class="work-btn">
+            <span>Work 1</span>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- WORK 2 -->
+        <a href="https://praiseo210.github.io/TOTAL-GRACE-VARIETY-STORE/" target="_blank" class="work-btn">
+            <span>Work 2</span>
+            <span class="arrow">→</span>
+        </a>
+
+    </div>
+</section>
+
+<style>
+.our-works {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.our-works h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.our-works p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.works-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #555;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.work-btn .arrow {
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.work-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 <span>Ajepe Praise Oluwafemi</span>.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+
+<a
+    href="https://wa.me/2348133671059"
+    class="whatsapp"
+    target="_blank"
+>
+    WA
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("navLinks");
+
+        nav.classList.toggle("active");
+
+    }
+
+
+    // Close mobile menu when a link is clicked
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document.getElementById("navLinks")
+            .classList.remove("active");
+
+        });
+
+    });
+
+</script>
+
+</section>
+</body>
+</html>
